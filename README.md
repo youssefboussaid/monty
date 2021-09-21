@@ -57,9 +57,9 @@ gcc -Wall -Werror -Wextra -pedantic *.c -o monty
 ```
 You should now have a `monty` executable file.
 ## Commands
-| Command |                                                                                        Description                                                                                       |                                  File                                    |
+| Command |                                                                                        Description                                                                                       |                                  File                                  |
 |:-------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-:|
-|   push  |                                                                              Pushes an element to the stack                                                                              | [ push.c] (https://github.com/youssefboussaid/monty/blob/master/push.c)  |
+|   push  |                                                                              Pushes an element to the stack                                                                              | [push.c](https://github.com/youssefboussaid/monty/blob/master/push.c)  |
 |   pall  |                                                                            Prints all the values on the stack                                                                            |   |
 |   pint  |                                                                         Prints the value at the top of the stack                                                                         |   |
 |   pop   |                                                                           Removes the top element of the stack                                                                           |   |
