@@ -77,3 +77,51 @@ You should now have a `monty` executable file.
 |  stack  |                                                Sets the format of the data to a stack (LIFO). This is the default behavior of the program                                                |   |
 |  queue  |                                                                       Sets the format of the data to a queue (FIFO)                                                                      |   |
 
+
+## Examples
+### 1. push, sub, pall
+#### byte.m
+```
+push 1
+push 2
+push 10
+push 3
+sub
+pall
+```
+#### Output
+```
+7
+2
+1
+```
+
+### 2. push, pstr
+#### byte.m
+```
+push 1
+push 2
+push 3
+push 4
+push 0
+push 110
+push 0
+push 110
+push 111
+push 116
+push 114
+push 101
+push 98
+push 108
+push 111
+push 72
+pstr
+```
+#### Output
+```
+Holberton
+```
+
+## Author
+**boussaid youssef** - [ethanpasta](https://github.com/youssefboussaid)
+**ben ali jassem** - [ethanpasta](https://github.com/jassemb)
