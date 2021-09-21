@@ -123,6 +123,6 @@ Holberton
 ```
 
 ## Author
-**boussaid youssef** - [ethanpasta](https://github.com/youssefboussaid)
+**boussaid youssef** - [youssef github](https://github.com/youssefboussaid)
 /
-**ben ali jassem** - [ethanpasta](https://github.com/jassemb)
+**ben ali jassem** - [jassem github](https://github.com/jassemb)
