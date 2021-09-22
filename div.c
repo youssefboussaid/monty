@@ -3,6 +3,7 @@
 /**
  * div_op - This function divides the second top nodes of the stack by the top
  * @stack: The stack list
+ *
  * @line_num: The line number of the file
  * Return: The edited stack
  */
