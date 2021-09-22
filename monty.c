@@ -4,7 +4,7 @@ int token = 1;
  * main - reads the bytecode and interprets it
  * @argc : number of arg
  * @argv : array of arg
- * Return : 0 on success
+ * Return: 0 on success
  */
 
 int main(int argc, char **argv)
