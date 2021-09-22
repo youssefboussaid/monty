@@ -31,9 +31,5 @@ int main(int argc, char **argv)
 		exit(EXIT_FAILURE);
 	}
 	loop_func(line_num, string, stack, file, read_c, nbytes);
-	free(string);
-	free_stack(&stack);
-	fclose(file);
-
 	return (0);
 }
