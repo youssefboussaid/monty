@@ -6,7 +6,7 @@
  * @line_number: unused variable
  * Return: address of the new node
  */
-stack_t *push(stack_t **stack,
+void *push(stack_t **stack,
 	      unsigned int line_number __attribute__((unused)))
 {
 	stack_t *new_node;
@@ -26,6 +26,6 @@ stack_t *push(stack_t **stack,
 		(*stack)->prev = new_node;
 	*stack = new_node;
 
-	return (new_node);
+
 
 }
