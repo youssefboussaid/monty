@@ -1,4 +1,4 @@
-# Monty 
+# Monty
 
 ## Description
 The Monty language
@@ -12,10 +12,10 @@ push 0
 push 1
 push 2
   push 3
-                   pall    
+                   pall
 push 4
-    push 5    
-      push    6        
+    push 5
+      push    6
 pall
 ```
 Monty byte code files can contain blank lines (empty or made of spaces only, and any additional text after the opcode or its required argument is not taken into account.
