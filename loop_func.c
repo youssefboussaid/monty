@@ -15,7 +15,6 @@ int loop_func(int line_num, char *string, stack_t *stack,
 		FILE  *file, ssize_t read_c, size_t nbytes)
 {
 	char *opcode;
-	char *num_str;
 
 while (read_c != EOF)
 {
@@ -40,20 +39,8 @@ while (read_c != EOF)
 	opcode = strtok(string, " \n");
 	if (opcode == NULL)
 		continue;
-	if (strcmp(opcode, "push") == 0)
-	{
-		num_str = strtok(NULL,  "\n");
-		if (num_str == NULL)
-		{
-			fprintf(stderr, "L%d: usage: push integer\n", line_num);
-			free(string);
-			free_stack(&stack);
-			fclose(file);
-			exit(EXIT_FAILURE);
-		}
-		check_digit(num_str, line_num, string, stack, file);
-		token = atoi(num_str);
-	}
+	push_error_handler(line_num, string
+		, stack, file, opcode);
 	op_func(opcode, &stack, line_num)(&stack, line_num);
 }
 return (0);
