@@ -66,8 +66,11 @@ stack_t *mul_op(stack_t **stack, unsigned int line_num);
 stack_t *pchar(stack_t **stack, unsigned int line_num);
 stack_t *pstr(stack_t **stack, unsigned int line_number);
 stack_t *rotl(stack_t **stack, unsigned int line_number);
-void check_digit(char *num_str, int line_num, char* string, stack_t *stack, FILE  *file);
-int loop_func (int line_num, char* string, stack_t *stack, FILE  *file, ssize_t read_c, size_t nbytes);
-
+void check_digit(char *num_str, int line_num, char *string,
+	stack_t *stack, FILE  *file);
+int loop_func(int line_num, char *string, stack_t *stack, FILE *file,
+	ssize_t read_c, size_t nbytes);
+void push_error_handler(int line_num, char *string
+		, stack_t *stack, FILE  *file, char *opcode);
 
 #endif /* _MONTY_H_ */
