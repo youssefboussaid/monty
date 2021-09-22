@@ -5,7 +5,7 @@ int token = 1;
  * main - reads the bytecode and interprets it
  * @argc : number of arg
  * @argv : array of arg
- * Return : 0 on success 
+ * Return : 0 on success
  */
 
 int main(int argc, char **argv)
@@ -32,7 +32,7 @@ int main(int argc, char **argv)
 		exit(EXIT_FAILURE);
 	}
 
-	while(read_c != EOF)
+	while (read_c != EOF)
 	{
 		token = 1;
 		i = 0;
@@ -41,7 +41,6 @@ int main(int argc, char **argv)
 		string = NULL;
 
 		read_c = getline(&string, &nbytes, file);
-		
 		if (read_c == -1)
 		{
 			free(string);
@@ -58,7 +57,6 @@ int main(int argc, char **argv)
 		opcode = strtok(string, " \n");
 		if (opcode == NULL)
 			continue;
-		
 		if (strcmp(opcode, "push") == 0)
 		{
 			num_str = strtok(NULL,  "\n");
