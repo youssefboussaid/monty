@@ -6,14 +6,6 @@
  * @line_number: unused variable
  * Return: address of the new node
  */
-#include "monty.h"
-
-/**
- * push - adds a node with the value token on the stack
- * @stack: pointer to the list stack
- * @line_number: unused variable
- * Return: address of the new node
- */
 stack_t *push(stack_t **stack,
 	      unsigned int line_number __attribute__((unused)))
 {
